@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tpv-90-d4q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comic Book Bold Italic.otf">
+            <string>ComicBook-BoldItalic</string>
+        </array>
+        <array key="Comic Book.otf">
+            <string>ComicBook</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="hDI-mf-hS9">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tpv-90-d4q" customClass="SplashViewController" customModule="ComicBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="17x-hQ-iLi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="Qvd-hm-mKv">
+                                <rect key="frame" x="43" y="77" width="329" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sOq-fm-Lio"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMz-dh-c7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-684.05797101449275" y="40.848214285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="ComicBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="ViewController" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ComicBook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEr-Xm-yNu">
+                                <rect key="frame" x="20" y="44" width="374" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ComicBook-BoldItalic" family="Comic Book" pointSize="32"/>
+                                <color key="textColor" red="0.40750819440000002" green="0.71375721690000005" blue="0.70588654279999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="latest issues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzt-Rj-Obm">
+                                <rect key="frame" x="20" y="110" width="374" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="20"/>
+                                <color key="textColor" red="0.53502291440000005" green="0.98829263450000004" blue="0.97647649049999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S4m-EJ-a9r">
+                                <rect key="frame" x="20" y="157" width="374" height="705"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Xq4-fZ-NWV">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xq4-fZ-NWV" id="Kpc-hz-gOp">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                        <connections>
+                                            <segue destination="1EG-kZ-DFc" kind="show" identifier="detail" id="heM-9X-Xqn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ComicBook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RL3-oY-bCb">
+                                <rect key="frame" x="21" y="41" width="374" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ComicBook-BoldItalic" family="Comic Book" pointSize="32"/>
+                                <color key="textColor" red="0.53502291440000005" green="0.98829263450000004" blue="0.97647649049999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HCU-Wf-A3Y"/>
+                    <connections>
+                        <outlet property="comicBookLabel" destination="oEr-Xm-yNu" id="9TB-9d-SIY"/>
+                        <outlet property="tableView" destination="S4m-EJ-a9r" id="5AU-Jc-qod"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="37.5"/>
+        </scene>
+        <!--General Detail View Controller-->
+        <scene sceneID="ky4-43-nni">
+            <objects>
+                <viewController storyboardIdentifier="GeneralDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1EG-kZ-DFc" customClass="GeneralDetailViewController" customModule="ComicBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eOO-e2-7L3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6V-tX-Q8p">
+                                <rect key="frame" x="20" y="102" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="0fl-wK-mNz"/>
+                                    <constraint firstAttribute="height" constant="40" id="jdQ-od-5a6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="20"/>
+                                <state key="normal" title="Characters">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="USo-cX-HCA" kind="show" identifier="Characters" id="zBZ-sN-kXd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODm-hS-79A">
+                                <rect key="frame" x="20" y="150" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9EX-GV-Xyc"/>
+                                    <constraint firstAttribute="width" constant="374" id="RJd-Vo-lsz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="20"/>
+                                <state key="normal" title="Teams">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xCY-lG-mnR" kind="show" identifier="teams" id="lXm-gB-rdv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srx-L6-r85">
+                                <rect key="frame" x="20" y="198" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="HBE-V3-cTM"/>
+                                    <constraint firstAttribute="height" constant="40" id="SN9-HY-Emh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="20"/>
+                                <state key="normal" title="Locations">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7z3-k5-W5P" kind="show" identifier="locations" id="90c-nq-KSN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eiu-DL-fbJ">
+                                <rect key="frame" x="20" y="28" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="iLq-OK-9fm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook-BoldItalic" family="Comic Book" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S7I-dh-IX0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S7I-dh-IX0" firstAttribute="trailing" secondItem="Eiu-DL-fbJ" secondAttribute="trailing" constant="20" id="6wA-nj-5RR"/>
+                            <constraint firstItem="ODm-hS-79A" firstAttribute="top" secondItem="I6V-tX-Q8p" secondAttribute="bottom" constant="17" id="9nt-Wv-Y3y"/>
+                            <constraint firstItem="ODm-hS-79A" firstAttribute="leading" secondItem="S7I-dh-IX0" secondAttribute="leading" constant="20" id="EFt-wd-hCT"/>
+                            <constraint firstItem="S7I-dh-IX0" firstAttribute="trailing" secondItem="srx-L6-r85" secondAttribute="trailing" constant="20" id="Ed9-6r-5Qr"/>
+                            <constraint firstItem="I6V-tX-Q8p" firstAttribute="top" secondItem="Eiu-DL-fbJ" secondAttribute="bottom" constant="14" id="NHp-QH-x9S"/>
+                            <constraint firstItem="S7I-dh-IX0" firstAttribute="trailing" secondItem="I6V-tX-Q8p" secondAttribute="trailing" constant="20" id="SV8-Bf-pYX"/>
+                            <constraint firstItem="srx-L6-r85" firstAttribute="leading" secondItem="S7I-dh-IX0" secondAttribute="leading" constant="20" id="TIK-Ea-Fxi"/>
+                            <constraint firstItem="Eiu-DL-fbJ" firstAttribute="top" secondItem="S7I-dh-IX0" secondAttribute="top" constant="28" id="Yb5-wR-xqJ"/>
+                            <constraint firstItem="Eiu-DL-fbJ" firstAttribute="leading" secondItem="S7I-dh-IX0" secondAttribute="leading" constant="20" id="Yfz-bS-LUt"/>
+                            <constraint firstItem="I6V-tX-Q8p" firstAttribute="leading" secondItem="S7I-dh-IX0" secondAttribute="leading" constant="20" id="d4o-b1-foD"/>
+                            <constraint firstItem="S7I-dh-IX0" firstAttribute="trailing" secondItem="ODm-hS-79A" secondAttribute="trailing" constant="20" id="kuj-xN-AIk"/>
+                            <constraint firstItem="srx-L6-r85" firstAttribute="top" secondItem="ODm-hS-79A" secondAttribute="bottom" constant="8" symbolic="YES" id="mXB-HS-EWt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mh2-hj-kSM"/>
+                    <connections>
+                        <outlet property="characterBotton" destination="I6V-tX-Q8p" id="kCc-sw-TBO"/>
+                        <outlet property="detailLabel" destination="Eiu-DL-fbJ" id="Vmx-Xf-TQ2"/>
+                        <outlet property="generalCard" destination="eOO-e2-7L3" id="N0X-QH-toK"/>
+                        <outlet property="locationsBotton" destination="srx-L6-r85" id="DFK-Vw-Re9"/>
+                        <outlet property="teamsBotton" destination="ODm-hS-79A" id="aJ1-ys-8af"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vY-2z-efD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="34.821428571428569"/>
+        </scene>
+        <!--Teams Detail View Controller-->
+        <scene sceneID="Ykx-Ky-g6s">
+            <objects>
+                <viewController storyboardIdentifier="TeamsDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xCY-lG-mnR" customClass="TeamsDetailViewController" customModule="ComicBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E9O-ap-KV4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ComicBook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPb-he-OiS">
+                                <rect key="frame" x="20" y="30" width="374" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="R6u-3P-gIu"/>
+                                    <constraint firstAttribute="width" constant="374" id="pXE-04-OHh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook-BoldItalic" family="Comic Book" pointSize="31"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teams" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYm-Fy-Y0l">
+                                <rect key="frame" x="20" y="93" width="374" height="36"/>
+                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H7a-gT-RCI">
+                                <rect key="frame" x="20" y="137" width="374" height="671"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JZg-Aa-K3u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fPb-he-OiS" firstAttribute="leading" secondItem="JZg-Aa-K3u" secondAttribute="leading" constant="20" id="BCq-ms-Nym"/>
+                            <constraint firstItem="ZYm-Fy-Y0l" firstAttribute="top" secondItem="fPb-he-OiS" secondAttribute="bottom" constant="24" id="Cl1-Pr-Mgb"/>
+                            <constraint firstItem="H7a-gT-RCI" firstAttribute="top" secondItem="JZg-Aa-K3u" secondAttribute="top" constant="137" id="Fgp-e6-gdg"/>
+                            <constraint firstItem="JZg-Aa-K3u" firstAttribute="bottom" secondItem="ZYm-Fy-Y0l" secondAttribute="bottom" constant="679" id="HYL-cs-QDq"/>
+                            <constraint firstItem="H7a-gT-RCI" firstAttribute="leading" secondItem="JZg-Aa-K3u" secondAttribute="leading" constant="20" id="IKL-7P-wdW"/>
+                            <constraint firstItem="ZYm-Fy-Y0l" firstAttribute="top" secondItem="JZg-Aa-K3u" secondAttribute="top" constant="93" id="Pvp-s0-Kvu"/>
+                            <constraint firstItem="H7a-gT-RCI" firstAttribute="top" secondItem="fPb-he-OiS" secondAttribute="bottom" constant="67" id="QZ7-80-phS"/>
+                            <constraint firstItem="JZg-Aa-K3u" firstAttribute="trailing" secondItem="ZYm-Fy-Y0l" secondAttribute="trailing" constant="20" id="Zak-7T-4ES"/>
+                            <constraint firstItem="H7a-gT-RCI" firstAttribute="leading" secondItem="ZYm-Fy-Y0l" secondAttribute="trailing" constant="-374" id="c4x-h1-Kkc"/>
+                            <constraint firstItem="JZg-Aa-K3u" firstAttribute="trailing" secondItem="H7a-gT-RCI" secondAttribute="trailing" constant="20" id="g2C-Dx-Uup"/>
+                            <constraint firstItem="JZg-Aa-K3u" firstAttribute="trailing" secondItem="fPb-he-OiS" secondAttribute="trailing" constant="20" id="kcj-i4-7Z3"/>
+                            <constraint firstItem="ZYm-Fy-Y0l" firstAttribute="leading" secondItem="JZg-Aa-K3u" secondAttribute="leading" constant="20" id="md3-xG-NX8"/>
+                            <constraint firstItem="fPb-he-OiS" firstAttribute="top" secondItem="JZg-Aa-K3u" secondAttribute="top" constant="30" id="rgR-oY-lUy"/>
+                            <constraint firstItem="JZg-Aa-K3u" firstAttribute="bottom" secondItem="H7a-gT-RCI" secondAttribute="bottom" id="sMZ-5e-Teb"/>
+                            <constraint firstItem="H7a-gT-RCI" firstAttribute="top" secondItem="ZYm-Fy-Y0l" secondAttribute="bottom" constant="8" symbolic="YES" id="x1Z-wG-sGt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DzM-RH-HVf"/>
+                    <connections>
+                        <outlet property="comicBookTeamsLabel" destination="fPb-he-OiS" id="XaB-Ch-fGA"/>
+                        <outlet property="teamsDetailTableView" destination="H7a-gT-RCI" id="U6P-Hl-FS9"/>
+                        <outlet property="teamsDetailView" destination="E9O-ap-KV4" id="bop-TJ-dh4"/>
+                        <outlet property="teamsLabel" destination="ZYm-Fy-Y0l" id="t2A-ZS-566"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufe-G4-61M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031.8840579710147" y="40.848214285714285"/>
+        </scene>
+        <!--Locations Detail View Controller-->
+        <scene sceneID="yR4-xv-e4N">
+            <objects>
+                <viewController storyboardIdentifier="LocationsDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7z3-k5-W5P" customClass="LocationsDetailViewController" customModule="ComicBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j1W-DY-Hli">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ComicBook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85p-3A-UYD">
+                                <rect key="frame" x="20" y="30" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZVo-sE-PgF"/>
+                                    <constraint firstAttribute="width" constant="374" id="mX8-7v-OEa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook-BoldItalic" family="Comic Book" pointSize="31"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ6-6f-yYt">
+                                <rect key="frame" x="20" y="94" width="374" height="35"/>
+                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lvd-jY-aD8">
+                                <rect key="frame" x="20" y="137" width="374" height="671"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eZe-4h-U8c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eZe-4h-U8c" firstAttribute="trailing" secondItem="ZZ6-6f-yYt" secondAttribute="trailing" constant="20" id="0Qx-R4-Tmp"/>
+                            <constraint firstItem="lvd-jY-aD8" firstAttribute="top" secondItem="eZe-4h-U8c" secondAttribute="top" constant="137" id="0iC-70-7tn"/>
+                            <constraint firstItem="ZZ6-6f-yYt" firstAttribute="top" secondItem="eZe-4h-U8c" secondAttribute="top" constant="94" id="0jG-my-kdN"/>
+                            <constraint firstItem="eZe-4h-U8c" firstAttribute="bottom" secondItem="ZZ6-6f-yYt" secondAttribute="bottom" constant="679" id="8il-Jy-la2"/>
+                            <constraint firstItem="lvd-jY-aD8" firstAttribute="top" secondItem="85p-3A-UYD" secondAttribute="bottom" constant="67" id="BgJ-sk-0yJ"/>
+                            <constraint firstItem="85p-3A-UYD" firstAttribute="leading" secondItem="eZe-4h-U8c" secondAttribute="leading" constant="20" id="FNi-Iu-wjT"/>
+                            <constraint firstItem="eZe-4h-U8c" firstAttribute="trailing" secondItem="85p-3A-UYD" secondAttribute="trailing" constant="20" id="HxB-wv-Qqd"/>
+                            <constraint firstItem="85p-3A-UYD" firstAttribute="top" secondItem="eZe-4h-U8c" secondAttribute="top" constant="30" id="N0z-ur-Ywd"/>
+                            <constraint firstItem="lvd-jY-aD8" firstAttribute="top" secondItem="ZZ6-6f-yYt" secondAttribute="bottom" constant="8" symbolic="YES" id="Qev-os-4eJ"/>
+                            <constraint firstItem="lvd-jY-aD8" firstAttribute="leading" secondItem="eZe-4h-U8c" secondAttribute="leading" constant="20" id="SuQ-y6-Net"/>
+                            <constraint firstItem="eZe-4h-U8c" firstAttribute="bottom" secondItem="85p-3A-UYD" secondAttribute="bottom" constant="738" id="dlh-Dd-FSw"/>
+                            <constraint firstItem="ZZ6-6f-yYt" firstAttribute="top" secondItem="85p-3A-UYD" secondAttribute="bottom" constant="24" id="ehx-KU-bnn"/>
+                            <constraint firstItem="eZe-4h-U8c" firstAttribute="trailing" secondItem="lvd-jY-aD8" secondAttribute="trailing" constant="20" id="jZL-Cr-Tzp"/>
+                            <constraint firstItem="ZZ6-6f-yYt" firstAttribute="leading" secondItem="eZe-4h-U8c" secondAttribute="leading" constant="20" id="kqE-Oi-Z4x"/>
+                            <constraint firstItem="eZe-4h-U8c" firstAttribute="bottom" secondItem="lvd-jY-aD8" secondAttribute="bottom" id="lhM-ED-IiZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rqV-AB-b66"/>
+                    <connections>
+                        <outlet property="LocationsDetailTableView" destination="lvd-jY-aD8" id="kgz-eE-NiB"/>
+                        <outlet property="comicBookLocationsLabel" destination="85p-3A-UYD" id="B7h-c2-HCX"/>
+                        <outlet property="locationsDetailView" destination="j1W-DY-Hli" id="aKL-gr-dFF"/>
+                        <outlet property="locationsLabel" destination="ZZ6-6f-yYt" id="Bhr-dK-1cN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1b-QN-eYB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053.6231884057975" y="739.95535714285711"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="3dq-yz-DPm">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="USo-cX-HCA" customClass="DetailViewController" customModule="ComicBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dW3-UB-hRW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ComicBook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYb-8q-MGx">
+                                <rect key="frame" x="20" y="30" width="374" height="40"/>
+                                <fontDescription key="fontDescription" name="ComicBook-BoldItalic" family="Comic Book" pointSize="31"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fhh-y4-Oy6">
+                                <rect key="frame" x="20" y="153" width="374" height="655"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Characters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaZ-aV-j9D">
+                                <rect key="frame" x="20" y="90" width="374" height="26"/>
+                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C9k-Yt-r5X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C9k-Yt-r5X" firstAttribute="bottom" secondItem="JaZ-aV-j9D" secondAttribute="bottom" constant="692" id="1CE-X1-Lri"/>
+                            <constraint firstItem="JaZ-aV-j9D" firstAttribute="top" secondItem="C9k-Yt-r5X" secondAttribute="top" constant="90" id="3sm-z8-qHD"/>
+                            <constraint firstItem="C9k-Yt-r5X" firstAttribute="bottom" secondItem="fhh-y4-Oy6" secondAttribute="bottom" id="AE6-7E-75E"/>
+                            <constraint firstItem="fhh-y4-Oy6" firstAttribute="top" secondItem="C9k-Yt-r5X" secondAttribute="top" constant="153" id="CeR-3h-nHu"/>
+                            <constraint firstItem="C9k-Yt-r5X" firstAttribute="trailing" secondItem="wYb-8q-MGx" secondAttribute="trailing" constant="20" id="FFD-Hz-nVX"/>
+                            <constraint firstItem="JaZ-aV-j9D" firstAttribute="leading" secondItem="C9k-Yt-r5X" secondAttribute="leading" constant="20" id="GL1-SI-3XR"/>
+                            <constraint firstItem="wYb-8q-MGx" firstAttribute="leading" secondItem="C9k-Yt-r5X" secondAttribute="leading" constant="20" id="JHr-rj-F0G"/>
+                            <constraint firstItem="C9k-Yt-r5X" firstAttribute="trailing" secondItem="wYb-8q-MGx" secondAttribute="trailing" constant="20" id="LX6-QL-IKi"/>
+                            <constraint firstItem="C9k-Yt-r5X" firstAttribute="trailing" secondItem="wYb-8q-MGx" secondAttribute="trailing" constant="20" id="N5f-KD-Jbm"/>
+                            <constraint firstItem="wYb-8q-MGx" firstAttribute="leading" secondItem="C9k-Yt-r5X" secondAttribute="leading" constant="20" id="Rbo-qD-G8b"/>
+                            <constraint firstItem="fhh-y4-Oy6" firstAttribute="top" secondItem="JaZ-aV-j9D" secondAttribute="bottom" constant="37" id="gYx-af-02f"/>
+                            <constraint firstItem="wYb-8q-MGx" firstAttribute="top" secondItem="C9k-Yt-r5X" secondAttribute="top" constant="10" id="h3C-KB-FYI"/>
+                            <constraint firstItem="wYb-8q-MGx" firstAttribute="top" secondItem="C9k-Yt-r5X" secondAttribute="top" constant="30" id="hrZ-1F-qYs"/>
+                            <constraint firstItem="wYb-8q-MGx" firstAttribute="leading" secondItem="C9k-Yt-r5X" secondAttribute="leading" constant="20" id="mHS-qe-Zqj"/>
+                            <constraint firstItem="fhh-y4-Oy6" firstAttribute="leading" secondItem="C9k-Yt-r5X" secondAttribute="leading" constant="20" id="mbR-Yo-X77"/>
+                            <constraint firstItem="wYb-8q-MGx" firstAttribute="top" secondItem="C9k-Yt-r5X" secondAttribute="top" constant="30" id="nJL-7c-juJ"/>
+                            <constraint firstItem="fhh-y4-Oy6" firstAttribute="top" secondItem="wYb-8q-MGx" secondAttribute="bottom" constant="83" id="q6O-qr-om0"/>
+                            <constraint firstItem="C9k-Yt-r5X" firstAttribute="trailing" secondItem="JaZ-aV-j9D" secondAttribute="trailing" constant="20" id="qU3-d7-owO"/>
+                            <constraint firstItem="JaZ-aV-j9D" firstAttribute="top" secondItem="wYb-8q-MGx" secondAttribute="bottom" constant="20" id="vEE-YN-DJd"/>
+                            <constraint firstItem="C9k-Yt-r5X" firstAttribute="trailing" secondItem="fhh-y4-Oy6" secondAttribute="trailing" constant="20" id="xDk-D5-aXn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Wd-FU-0Il"/>
+                    <connections>
+                        <outlet property="charactersDetailView" destination="dW3-UB-hRW" id="LXr-xA-vts"/>
+                        <outlet property="charactersLabel" destination="JaZ-aV-j9D" id="qZ7-Mt-uKB"/>
+                        <outlet property="comicBookLabel" destination="wYb-8q-MGx" id="mbH-M6-82f"/>
+                        <outlet property="detailTableView" destination="fhh-y4-Oy6" id="qYh-S4-5Od"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRX-Zi-bFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031.8840579710147" y="-627.45535714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash" width="1024" height="1024"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

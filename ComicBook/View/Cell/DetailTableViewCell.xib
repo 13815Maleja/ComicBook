@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comic Book.otf">
+            <string>ComicBook</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellTwo" rowHeight="80" id="KGk-i7-Jjw" customClass="DetailTableViewCell" customModule="ComicBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bi9-lR-jFT">
+                        <rect key="frame" x="12" y="13" width="437" height="81"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fme-2m-OYW">
+                                <rect key="frame" x="107" y="8" width="312" height="65"/>
+                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kt9-Tr-exN">
+                                <rect key="frame" x="29" y="8.5" width="71" height="70"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Fme-2m-OYW" secondAttribute="trailing" constant="18" id="70b-V9-pLf"/>
+                            <constraint firstItem="Fme-2m-OYW" firstAttribute="top" secondItem="Bi9-lR-jFT" secondAttribute="top" constant="8" id="7dj-TI-FQG"/>
+                            <constraint firstItem="Kt9-Tr-exN" firstAttribute="top" secondItem="Bi9-lR-jFT" secondAttribute="top" constant="8" id="8Nr-xY-Q91"/>
+                            <constraint firstAttribute="bottom" secondItem="Kt9-Tr-exN" secondAttribute="bottom" constant="2" id="JMX-PL-j7N"/>
+                            <constraint firstItem="Kt9-Tr-exN" firstAttribute="leading" secondItem="Bi9-lR-jFT" secondAttribute="leading" constant="29" id="cbd-bU-Tpc"/>
+                            <constraint firstAttribute="trailing" secondItem="Kt9-Tr-exN" secondAttribute="trailing" constant="347" id="mSI-qe-ih0"/>
+                            <constraint firstItem="Fme-2m-OYW" firstAttribute="leading" secondItem="Bi9-lR-jFT" secondAttribute="leading" constant="107" id="qdI-1n-x0d"/>
+                            <constraint firstAttribute="bottom" secondItem="Fme-2m-OYW" secondAttribute="bottom" constant="8" id="tSe-Bi-pJs"/>
+                            <constraint firstItem="Fme-2m-OYW" firstAttribute="leading" secondItem="Kt9-Tr-exN" secondAttribute="trailing" constant="17" id="wAH-dE-fPU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Bi9-lR-jFT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="HXA-QT-l5u"/>
+                    <constraint firstItem="Bi9-lR-jFT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Kcl-ih-glO"/>
+                    <constraint firstAttribute="bottom" secondItem="Bi9-lR-jFT" secondAttribute="bottom" constant="12" id="e0b-Co-Evn"/>
+                    <constraint firstAttribute="trailing" secondItem="Bi9-lR-jFT" secondAttribute="trailing" constant="11" id="mjO-ZB-336"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cardDetail" destination="Bi9-lR-jFT" id="OHD-yA-vQM"/>
+                <outlet property="contentViewCharacters" destination="H2p-sc-9uM" id="wdB-7L-XZC"/>
+                <outlet property="itemImageCharacter" destination="Kt9-Tr-exN" id="ZjI-XF-IOl"/>
+                <outlet property="itemNameCharacter" destination="Fme-2m-OYW" id="qTT-hG-Wjm"/>
+            </connections>
+            <point key="canvasLocation" x="-82.608695652173921" y="124.55357142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
